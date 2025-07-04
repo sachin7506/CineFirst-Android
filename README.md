@@ -1,2 +1,2 @@
-# CineFirst-Android
-A modern Android app for browsing users and trending movies with offline-first sync
+🎬 CineFirst | Android Movie & User Explorer  
+Modern app with TMDB movies, ReqRes.in users, offline-first sync (MVVM + Jetpack)  
