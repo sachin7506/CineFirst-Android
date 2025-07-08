@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">CineFirst</string>
+    <string name="Submit">submit</string>
+    <string name="job">job</string>
+    <string name="Name">name</string>
+    <string name="movie_poster">Movie poster: %1$s</string>
+    <string name="Add_User">Add User</string>
+    <string name="close_button_desc">Close add user form</string>
+    <string name="search_hint">Search users by name...</string>
+    <string name="error">Error loading data.</string>
+    <string name="cover">cover</string>
+    <string name="movies_title">Popular Movies</string>
+    <string name="error_message">Oops! Something went wrong. Please try again.</string>
+
+    <string name="movie_poster_desc">Movie poster image</string>
+    <string name="rating_format">%.1f</string>
+    <string name="release_date_format">Released %s</string>
+
+
+    <string name="watch_trailer">Watch Trailer</string>
+    <string name="add_to_list">Add to List</string>
+
+
+    <string name="duration_format">%d min</string>
+    <string name="vote_count_format">(%d votes)</string>
+    </resources>
+
+

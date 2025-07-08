@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/item_padding"
+    android:background="@color/item_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:scaleType="centerCrop"
+        android:background="@color/image_placeholder"
+        android:contentDescription="@string/movie_poster"
+        android:elevation="2dp" />
+
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/text_margin"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:textStyle="bold"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/line_spacing"
+            android:fontFamily="sans-serif-medium"/>
+
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:textSize="@dimen/subtitle_size"
+            android:textColor="@color/subtitle_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/element_spacing"
+            android:maxLines="1"
+            android:fontFamily="sans-serif"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/element_spacing"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="0"
+                android:isIndicator="true"
+                style="@style/DribbbleRatingBar"
+                android:theme="@style/RatingBar"/>
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="@dimen/rating_size"
+                android:textColor="@color/rating_text"
+                android:text="@string/rating_format"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.02"
+                android:background="@drawable/rating_pill_background"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:gravity="center"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
